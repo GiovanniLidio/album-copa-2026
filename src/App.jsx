@@ -147,7 +147,7 @@ function buildDefault() {
     state.album[c.code] = {};
     state.trades[c.code] = {};
     for (let i = 1; i <= c.total; i++) {
-      state.album[c.code][i] = c.defaultHas.includes(i);
+      state.album[c.code][i] = false;
       state.trades[c.code][i] = 0;
     }
   }));
@@ -155,12 +155,12 @@ function buildDefault() {
     state.album[sp.code] = {};
     state.trades[sp.code] = {};
     sp.stickers.forEach(s => {
-      state.album[sp.code][s] = sp.defaultHas.includes(s);
+      state.album[sp.code][s] = false;
       state.trades[sp.code][s] = 0;
     });
   });
   LEGENDARY_PLAYERS.forEach(p => {
-    state.legendary[p.name] = { roxa: p.roxa, bronze: p.bronze, prata: p.prata, ouro: p.ouro };
+    state.legendary[p.name] = { roxa: false, bronze: false, prata: false, ouro: false };
   });
   return state;
 }
