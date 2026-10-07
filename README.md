@@ -1,16 +1,46 @@
-# React + Vite
+# Álbum de Figurinhas — Copa do Mundo 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para acompanhar a coleção do álbum de figurinhas da Copa do Mundo 2026: marque o que você já tem, veja o que falta e organize as trocas.
 
-Currently, two official plugins are available:
+**Demonstração:** https://giovannilidio.github.io/album-copa-2026/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Tela principal do álbum](prints/album.png)
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Meu Álbum:** grade de figurinhas organizada por grupo e por país, com contador de progresso
+- **Lendárias:** aba dedicada às figurinhas especiais
+- **Trocas:** aba para organizar as figurinhas de troca
+- **Busca e filtros:** buscar país, ver só as que faltam ou só as que já tenho
+- **Salvamento automático** no navegador (localStorage), sem cadastro
+- **Salvar e restaurar por código**, para levar o progresso para outro aparelho
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- JavaScript
+- Vite
+- HTML e CSS
+- GitHub Pages (publicação)
+
+## Como rodar localmente
+
+```bash
+git clone https://github.com/GiovanniLidio/album-copa-2026.git
+cd album-copa-2026
+npm install
+npm run dev
+```
+
+Depois, abra o endereço que aparecer no terminal (normalmente http://localhost:5173).
+
+## O que aprendi
+
+- Gerenciamento de estado com `useState` e `useEffect`
+- Persistência de dados com `localStorage`
+- Organização de uma aplicação React e publicação com GitHub Pages
+
+## Autor
+
+**Giovanni Lidio dos Santos**
+[LinkedIn](https://linkedin.com/in/giovannilidio) · [GitHub](https://github.com/GiovanniLidio)
